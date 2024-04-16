@@ -1,7 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+
+@font-face {
+	font-family: 'RocknRoll One';
+	src: url(/fonts/RocknRoll_One/RocknRollOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS 2';
+	src: url(/fonts/M_PLUS_2/MPLUS2-VariableFont_wght.woff2) format("woff-variations");
+	font-weight: 100 900;
+}
+
 :root {
 	font-family: "M PLUS 2";
-	accent-color: #2afa70;
+	font-variation-settings: "wght" 400;
+	accent-color: #2afa70; 
 	background-color: #fbeaf5;
 	color: #1c1d1d;
 	margin: 0%;
@@ -9,5 +23,10 @@
 
 a {
 	text-decoration: none;
-	color: #2afa70;
+	color: #1c1d1d;
+	/* color: #2afa70; */
+}
+
+h1 {
+	font-size: 150%;
 }
