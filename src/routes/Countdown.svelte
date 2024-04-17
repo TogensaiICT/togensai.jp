@@ -17,7 +17,7 @@
 </script>
 
 <div class="countdown">
-    兎原祭まで…
+    兎原祭まで…<wbr />
     <span id="day">{days}日</span>
     <span id="hours">{hours}時間</span>
     <span id="minutes">{minutes}分</span>
@@ -29,5 +29,6 @@
     .countdown {
         font-size: x-large;
         text-align: center;
+        word-break: keep-all;
     }
 </style>

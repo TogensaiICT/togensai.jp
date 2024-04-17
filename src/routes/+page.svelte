@@ -12,7 +12,7 @@
 <main>
 	<div class="top">
 		<img id=main-img style="width: 40%; text-align: center" src={logo_black} alt="第12回兎原祭" />
-		<div style="margin-top: 10%; width: 60%">
+		<div class="info">
 			<h1 style="text-align: center;">第12回兎原祭</h1>
 			<div style="display:flex; justify-content: center">
 				<div>
@@ -33,7 +33,7 @@
 
 	<Countdown></Countdown>
 
-	<div style="display: flex; width: 100%; justify-content: center">
+	<div class="concept-news">
 		<!---<div style="width: 50%;">-->
 			<Card title="コンセプト" nolink='true'>
 				<blockquote cite="https://compling.upol.cz/ntumc/cgi-bin/wn-gridx.cgi?gridmode=wnja">
@@ -65,7 +65,7 @@
 
 	</Card>
 	<Card title="本校SNS">
-		<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/WWjVN1fp-3Q?si=xpkXsj-KIh7YCmQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+		<div style="text-align: center; aspect-ratio: 16/9;"><iframe style="width: 100%;height:100%" src="https://www.youtube.com/embed/WWjVN1fp-3Q?si=xpkXsj-KIh7YCmQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 	</Card>
 </main>
 
@@ -88,10 +88,21 @@
 		}
 	}
 
-	.info {}
-
+	.info {
+		margin-top: 10%; width: 60%
+	}
 	.info-large {
 		font-size: 300%;
 		font-variation-settings: 'wght' 100;
+	}
+
+	.concept-news {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+
+		@media (max-width: 600px) {
+			display: block;
+		}
 	}
 </style>
