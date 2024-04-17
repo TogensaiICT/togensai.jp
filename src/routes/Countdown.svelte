@@ -13,7 +13,7 @@
     $: hours = String(Math.floor($difference / 1000 / 60 / 60 % 24)).padStart(2, '0');
     $: minutes = String(Math.floor($difference / 1000 / 60 % 60)).padStart(2, '0');
     $: seconds = String(Math.floor($difference / 1000 % 60)).padStart(2, '0');
-    $: milliSeconds = String(Math.floor($difference % 100)).padStart(2, '0');
+    $: milliSeconds = String(Math.floor($difference)).slice(-3, -1);
 </script>
 
 <div class="countdown">
