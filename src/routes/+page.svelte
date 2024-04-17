@@ -11,15 +11,23 @@
 
 <main>
 	<div class="top">
-		<img id=main-img style="width: 40%; text-align: center" src={logo_black} alt="第12回兎原祭" />
+		<img id=main-img src={logo_black} alt="第12回兎原祭" />
 		<div class="info">
-			<h1 style="text-align: center;">第12回兎原祭</h1>
-			<div style="display:flex; justify-content: center">
+			<h1 id="title">第12回兎原祭</h1>
+			<div id="info-detail">
 				<div>
-					<div>
-						DATE: 2024/<span class="info-large">5/17</span>(Fri) –
-						<span class="info-large">5/18</span>(Sat)
+					<div id="date-pc">
+						<span style="padding: 3%;">DATE:<br /> 2024/</span><span class="info-large">5/17</span><span><br>(Fri)</span> <span style="padding: 3%;">–</span>
+						<span class="info-large">5/18</span><span style="padding: 3%"><br>(Sat)</span>
+					</div> 
+
+					<div id="date-smartphone">
+						DATE:<br>
+
+						<div style="display: flex; align-items:center"><span style="padding: 10%;">2024/</span><div><span class="info-large">5/17</span>(Fri) – <br> <span class="info-large">5/18</span>(Sat) . </div></div>
+
 					</div>
+
 					<div>
 						OPEN 9:00 – CLOSE 15:00
 					</div>
@@ -49,6 +57,8 @@
 					</div>
 					<footer style="font-size: 60%; text-align: right">——情報通信研究機構<br><cite>"日本語 Wordnet"</cite></footer>
 				</blockquote>
+
+				<a href="/about" style="display:flex; justify-content:center">詳細はこちら</a>
 			</Card>
 		<!--</div>-->
 		<!---<div style="width: 50%; font-size: 95%">-->
@@ -61,10 +71,10 @@
 		<!---</div>-->
 	</div>
 
-	<Card title="ご注意">
+	<!-- <Card title="ご注意">
 
-	</Card>
-	<Card title="本校SNS">
+	</Card> -->
+	<Card title="本校SNS" nolink="true">
 		<div style="text-align: center; aspect-ratio: 16/9;"><iframe style="width: 100%;height:100%" src="https://www.youtube.com/embed/WWjVN1fp-3Q?si=xpkXsj-KIh7YCmQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 	</Card>
 </main>
@@ -76,21 +86,67 @@
 	}
 	.top {
 		width: 100%;
-		@media (min-width: 600px) {
-			display: flex;
+		display: flex;
+
+		& #main-img {
+			width: 40%;
 		}
+
+		& #title {
+			text-align: center;
+		}
+
+		& #info {
+			margin-top: 10%;
+			width: 60%
+		}
+
+		& #info-detail {
+			display:flex;
+			justify-content: center;
+			margin: 3%;
+			word-break: keep-all;
+			text-align: center;
+		}
+
+		& #date-pc {
+			display: flex; align-items: center;
+		}
+
+		& #date-smartphone {
+			display: none;
+		}
+		@media (max-width: 600px) {
+			display: block;
+			& #main-img {
+				width: 80%;
+				text-align: center;
+				display: block;
+				margin: auto;
+			}
+
+			& #info {
+				width: 100%;
+			}
+
+			& #date-pc {
+				display: none;
+			}
+
+			& #date-smartphone {
+				display: block;
+			}
+		}
+
 		font-family: "M PLUS 2";
 		font-variation-settings: "wght" 200;
 	}
-	#main-img {
+	/* #main-img {
 		@media (min-width: 600px) {
 			width: 40%;
 		}
-	}
+	} */
 
-	.info {
-		margin-top: 10%; width: 60%
-	}
 	.info-large {
 		font-size: 300%;
 		font-variation-settings: 'wght' 100;

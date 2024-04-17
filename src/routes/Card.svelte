@@ -31,7 +31,7 @@
 <style>
     .card {
         background-color: whitesmoke;
-        box-shadow: 1px 1px 10px 0.1px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 10px 10px 0.1px rgba(0, 0, 0, 0.5);
         transition: 10s;
 
         border-radius: 15px;

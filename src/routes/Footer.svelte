@@ -7,11 +7,14 @@
 <style>
     footer {
         color: #fbeaf5;
-		background-color: #2afa70;
+		background-color: #14ea5b;
 		width: 100%;
-        font-size: normal;
-        font-weight: bold;
-        position: fixed;
+        @media (max-width: 600px) {
+            font-size: 70%;
+        }
+        font-size: 90%;
+        font-weight: lighter;
+        /* position: fixed; */
         bottom: 0;
 	}
 </style>

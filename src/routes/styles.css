@@ -17,7 +17,7 @@
 	font-variation-settings: "wght" 400;
 	accent-color: #2afa70; 
 	background-color: #fbeaf5;
-	font-size: 25px;
+	font-size: 20px;
 	color: #1c1d1d;
 	margin: 0%;
 
@@ -31,7 +31,7 @@
 a {
 	text-decoration: none;
 	/* color: #1c1d1d; */
-	color: #2afa70;
+	color: #14ea5b;
 	font-variation-settings: "wght" 700;
 }
 

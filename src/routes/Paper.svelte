@@ -14,6 +14,6 @@
         margin: 5%;
 
         word-break: break-all;
-        border-radius: 15px;
+        border-radius: 60px;
     }
 </style>
