@@ -9,7 +9,9 @@
         color: #fbeaf5;
 		background-color: #2afa70;
 		width: 100%;
-        font-size: large;
+        font-size: normal;
         font-weight: bold;
+        position: fixed;
+        bottom: 0;
 	}
 </style>

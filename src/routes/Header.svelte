@@ -20,8 +20,11 @@
 	}
 	#link-to-top {
 		color: #fbeaf5;
-		font-size: large;
 		font-weight: bold;
 		margin: 1%;
+
+		@media (max-width) {
+			font-size: 25px;
+		}
 	}
 </style>

@@ -34,6 +34,8 @@
         box-shadow: 1px 1px 10px 0.1px rgba(0, 0, 0, 0.5);
         transition: 10s;
 
+        border-radius: 15px;
+
         padding: 1%;
         @media (min-width: 600px) {
             width: 80%;
