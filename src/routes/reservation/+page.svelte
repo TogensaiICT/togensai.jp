@@ -2,7 +2,7 @@
   import Paper from "../Paper.svelte";
 </script>
 <main>
-    <Paper title="エントリーガイド（仮）">
+    <Paper title="参加のためのガイド">
         <h2>予約の方法</h2>
         <div style="font-weight: bold;">第11回兎原祭は事前予約制です。事前の予約をお願いいたします。</div>
         <ul>

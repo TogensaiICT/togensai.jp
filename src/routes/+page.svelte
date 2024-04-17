@@ -47,7 +47,6 @@
 				<blockquote cite="https://compling.upol.cz/ntumc/cgi-bin/wn-gridx.cgi?gridmode=wnja">
 					<div style="font-family: 'Playfair Display';">Spark</div>
 					<div style="display: flex; font-size: 80%;">
-						<div>名</div>
 						<ol>
 							<li>耀き 閃光 スパーク</li>
 							<li>放電</li>

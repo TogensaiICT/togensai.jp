@@ -2,7 +2,7 @@
 	<a href="/" id="link-to-top">第12回兎原祭</a>
 	
 	<div class="menu">
-		<a href="/reservation" style="color: #fbeaf5;">エントリーガイド</a>
+		<a href="/reservation" style="color: #fbeaf5;">参加のためのガイド</a>
 	</div>
 </header>
 
