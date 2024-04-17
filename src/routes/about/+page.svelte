@@ -1,26 +1,41 @@
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
+<main style="padding: 10%;">
+    <div>
+        <h2>兎原祭について</h2>
+        <div id="about-togenfes">
+            <p style="width: 70%;">兎原祭は2013年に開催された「神戸大学附属中等教育学校第1回文化祭」をはじまりに、翌年の2014年に「兎原祭」に改称し、今回で12回目を迎えます。<br>「兎原祭」の「兎原」は現在の芦屋市、東灘区、灘区と西宮市の一部からなった「兎原郡」からとられています。<br>そのため、「兎原祭」のマスコットキャラクター「とげたん」もうさぎの形をしていますが、「とげたん」は「うさぎ」ではなく、「うさぎの妖精」だそうです！</p>
+            <div style="text-align: center;"><img src="/images/togetan.png" alt="とげたん" id="togetan"></div>
+        </div>
+    </div>
+    <div>
+        <h2>テーマについて</h2>
 
-<div class="text-column">
-	<h1>About this app</h1>
+        <div style="text-align: center;"><img src="/images/logo_black.png" alt="ロゴ" id="logo" ></div>
+        <p>
+            Sparkとは火花、発火点を意味します。<br>
+            生徒ひとりひとりの新しいアイデアを尊重し、活気に満ちた兎原祭を作り上げ、そんな兎原祭を通して生徒の笑顔をはじけさせたい。<br>
+            その一心で第12回兎原祭を作り上げてきました。<br>
+            新しいアイデアがたくさん発案されることを願って、このテーマを設定しました。
+        </p>
+    </div>
+</main>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+<style>
+    #about-togenfes {
+        display: flex;
+        width: 100%;
+    }
 
-	<pre>npm create svelte@latest</pre>
+    #togetan {
+        width: 100%;
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+    }
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
-</div>
+    #logo {
+        width: 30%;
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+    }
+</style>
