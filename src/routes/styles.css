@@ -38,3 +38,7 @@ a {
 h1 {
 	font-size: 150%;
 }
+
+strong {
+	font-variation-settings: "wght" 700;
+}
