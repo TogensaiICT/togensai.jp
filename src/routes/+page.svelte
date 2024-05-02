@@ -63,6 +63,7 @@
 		<!---<div style="width: 50%; font-size: 95%">-->
 			<Card title="お知らせ" nolink='true'>
 				<ul>
+					<li><a href="/access">アクセス方法の説明を掲載しました！</a>（2024/5/2）</li>
 					<li>兎原祭の来場予約が4/20より始まります！<a href="/reservation">方法はこちら</a></li>
 					<li>Webサイトを公開しました（2024/4/17）</li>
 				</ul>
