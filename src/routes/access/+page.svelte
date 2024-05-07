@@ -15,8 +15,8 @@
         本校の最寄り駅は<strong>御影</strong>です。特急も停車します。
         <iframe 
            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.9309009861554!2d135.2512946743997!3d34.732136081527784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008c67a958fd9d%3A0x61d66bd2fb4642ca!2z56We5oi45aSn5a2m6ZmE5bGe5Lit562J5pWZ6IKy5a2m5qCh!5e0!3m2!1sja!2sjp!4v1714741762956!5m2!1sja!2sjp"
-           width="600"
-           height="450"
+           width="100%"
+           height="300"
            style="border:0;"
            allowfullscreen=""
            loading="lazy"
