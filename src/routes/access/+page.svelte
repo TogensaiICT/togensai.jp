@@ -1,5 +1,5 @@
 <script>
-  import Paper from "../Paper.svelte";
+    import Paper from "../Paper.svelte";
 
 </script>
 <main>
