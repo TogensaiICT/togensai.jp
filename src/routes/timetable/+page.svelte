@@ -5,7 +5,8 @@
         |"First"
         |"Second";
 
-    let date: Date = 'First'
+    //let date: Date = 'First'
+    let date: Date = 'Second'
 </script>
 
 
@@ -108,7 +109,10 @@
     }
 
     .date { grid-area: 1 / 1 / 39 / 2; }
+    
+
     .time { grid-area: 1 / 2 / 2 / 3; }
+    
     .nine { grid-area: 2 / 2 / 3 / 3; }
     .ten { grid-area: 8 / 2 / 9 / 3; }
     .eleven { grid-area: 14 / 2 / 15 / 3; }
@@ -116,12 +120,22 @@
     .thirteen { grid-area: 26 / 2 / 27 / 3; }
     .fourteen { grid-area: 32 / 2 / 33 / 3; }
     .fifteen { grid-area: 38 / 2 / 39 / 3; }
+    
+    
     .arena { grid-area: 1 / 3 / 2 / 4; }
+    
     .chorus1 { grid-area: 3 / 3 / 9 / 4; }
     .eleventh-drama1 { grid-area: 11 / 3 / 16 / 4; }
     .drama1 { grid-area: 18 / 3 / 22 / 4; }
     .brass1 { grid-area: 32 / 3 / 37 / 4; }
+    
+    .brass2 {grid-area: 3 / 3 / 8 / 4;}
+    .eleventh-drama2 {grid-area: 12 / 3 / 17 / 4;}
+    .drama2 {grid-area: 22 / 3 / 27 / 4;}
+    .chorus2 {grid-area: 30 / 3 / 35 / 4;}
+    
     .stage { grid-area: 1 / 4 / 2 / 5; }
+    
     .patata1 { grid-area: 3 / 4 / 6 / 5; }
     .togemanzai1 { grid-area: 8 / 4 / 9 / 5; }
     .isee1 { grid-area: 12 / 4 / 14 / 5; }
@@ -129,12 +143,25 @@
     .p-and-a1 { grid-area: 18 / 4 / 20 / 5; }
     .asricotta1 { grid-area: 21 / 4 / 31 / 5; }
     .bingo1 { grid-area: 33 / 4 / 38 / 5; }
+    .asricotta2 {grid-area: 3 / 4 / 16 / 5;}
+    .togemanzai2 { grid-area: 17 / 4 / 18 / 5; }
+    .moritatatsuya2 {grid-area: 23 / 4 / 26 / 5; }
+    .unagipai2 { grid-area: 27 / 4 / 30 / 5; }
+    .fragment2 {grid-area: 31 / 4 / 34 / 5; }
+    .root-and-5th2 {grid-area: 35 / 4 / 38 / 5;}
+    
+    
     .musicroom { grid-area: 1 / 5 / 2 / 6; }
+    
     .moritatatsuya1 { grid-area: 5 / 5 / 8 / 6; }
     .uranus1 { grid-area: 9 / 5 / 12 / 6; }
     .fragment1 { grid-area: 13 / 5 / 16 / 6; }
     .root-and-5th1 { grid-area: 17 / 5 / 20 / 6; }
     .unagipai-kari1 { grid-area: 21 / 5 / 24 / 6; }
+
+    .p-and-a2 {grid-area: 12 / 5 / 14 / 6;}
+    .uranus2 {grid-area: 15 / 5 / 18 / 6; }
+    .patata2 {grid-area: 22 / 5 / 25 / 6;}
 
     @media(max-width: 600px) {
         .tt {
