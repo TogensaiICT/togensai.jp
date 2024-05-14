@@ -1,27 +1,31 @@
 <script lang="ts">
     import Paper from "../Paper.svelte";
 
-    type Date = 
-        |"First"
-        |"Second";
-
-    //let date: Date = 'First'
-    let date: Date = 'Second'
+    let dates = [
+        {id : 'First', name : "1日目"},
+        {id : 'Second', name : '2日目'}
+    ];
+    let date = 'First';
 </script>
 
 
 <main>
     <Paper title="タイムテーブル">
-        <select>
-            <option>5/17</option>
-            <option>5/18 午前の部</option>
-            <option>5/19 午後の部</option>
-        </select>
+        <div style="display: flex; justify-content: center">
+            <select bind:value={date} id="selector">
+                <!--<option>5/17</option>
+                <option>5/18</option>-->
+                {#each dates as date}
+                    <option value={date.id}>{date.name}</option>
+                {/each}
+            </select>
+        </div>
+
         <div class="tt">
             <div class="date">
                 <h2>{#if date == 'First'} 5/17{/if}</h2>
+                <h2>{#if date == 'Second'}5/18{/if}</h2>
             </div>
-            <div class="time"></div>
             <div class="nine">9:00</div>
             <div class="ten">10:00</div>
             <div class="eleven">11:00</div>
@@ -92,6 +96,21 @@
 </main>
 
 <style>
+    #selector {
+        text-align-last: center;
+
+        width: 30%;
+        background-color: palegreen;
+        border-radius: 5px;
+        border-color: #1c1d1d;
+
+        font-family: 'RocknRoll One';
+
+        font-size: x-large;
+
+        margin: 3%;
+    }
+
     .tt {
         display: grid;
         grid-template-columns: 1.5fr 0.3fr repeat(3, 1fr);
@@ -100,18 +119,24 @@
         grid-row-gap: 0px;
 
         & div {
-            background-color: aqua;
+            background-color: palegreen;
             border-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            padding: 10%;
         }
     }
 
-    .date { grid-area: 1 / 1 / 39 / 2; }
+    .date {
+        grid-area: 1 / 1 / 5 / 2;
+        align-items: start;
+        border-radius: 5px;
+        background-color: rgb(90, 255, 40);
+    }
     
 
-    .time { grid-area: 1 / 2 / 2 / 3; }
     
     .nine { grid-area: 2 / 2 / 3 / 3; }
     .ten { grid-area: 8 / 2 / 9 / 3; }
