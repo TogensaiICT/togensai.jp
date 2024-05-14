@@ -1,6 +1,11 @@
 <script>
   import Paper from "../Paper.svelte";
 </script>
+
+<svelte:head>
+    <title>参加のためのガイド</title>
+</svelte:head>
+
 <main>
     <Paper title="参加のためのガイド">
         <h2>予約の方法</h2>
