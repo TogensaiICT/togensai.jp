@@ -77,7 +77,7 @@
             <img src="ESS.jpeg" alt="ESS部">
             <h2>ESS部</h2>
             <h3>3-1</h3>
-            <h4>"こんにちは！ESS部です！3-1で公開ディベートを実施しています。様々な論題を肯定側と否定側に分かれて議論します。ぜひ来てください！"</h4>
+            <h4>こんにちは！ESS部です！3-1で公開ディベートを実施しています。様々な論題を肯定側と否定側に分かれて議論します。ぜひ来てください！</h4>
         </div>
         <div class="projects">
             <img src="British.png" alt="The British Maze">
