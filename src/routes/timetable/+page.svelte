@@ -8,6 +8,9 @@
     let date = 'First';
 </script>
 
+<svelte:head>
+    <title>タイムテーブル</title>
+</svelte:head>
 
 <main>
     <Paper title="タイムテーブル">
@@ -22,17 +25,13 @@
         </div>
 
         <div class="tt">
-            <div class="date">
-                <h2>{#if date == 'First'} 5/17{/if}</h2>
-                <h2>{#if date == 'Second'}5/18{/if}</h2>
-            </div>
-            <div class="nine">9:00</div>
-            <div class="ten">10:00</div>
-            <div class="eleven">11:00</div>
-            <div class="twelve">12:00</div>
-            <div class="thirteen">13:00</div>
-            <div class="fourteen">14:00</div>
-            <div class="fifteen">15:00</div>
+            <div class="nine">⏰9</div>
+            <div class="ten">⏰10</div>
+            <div class="eleven">⏰11</div>
+            <div class="twelve">⏰12</div>
+            <div class="thirteen">⏰13</div>
+            <div class="fourteen">⏰14</div>
+            <div class="fifteen">⏰15</div>
 
             <div class="arena">
                 <h3>アリーナ</h3>
@@ -113,8 +112,8 @@
 
     .tt {
         display: grid;
-        grid-template-columns: 1.5fr 0.3fr repeat(3, 1fr);
-        grid-template-rows: 2fr repeat(37, 1fr);
+        grid-template-columns: 0.5fr repeat(3, 1fr);
+        grid-template-rows: 1.5fr repeat(36, 0.5fr);
         grid-column-gap: 5px;
         grid-row-gap: 0px;
 
@@ -128,69 +127,61 @@
             padding: 10%;
         }
     }
+    
+    .nine { grid-area: 2 / 1 / 2 / 1;}
+    .ten { grid-area: 8 / 1 / 9 / 1;}
+    .eleven { grid-area: 14 / 1 / 15 / 1;}
+    .twelve { grid-area: 20 / 1 / 21 / 1;}
+    .thirteen { grid-area: 26 / 1 / 27 / 1;}
+    .fourteen { grid-area: 32 / 1 / 33 / 1;}
+    .fifteen { grid-area: 38 / 1 / 39 / 1;}
+    
+    
+    .arena { grid-area: 1 / 2 / 2 / 3; }
+    
+    .chorus1 { grid-area: 3 / 2 / 9 / 3; }
+    .eleventh-drama1 { grid-area: 11 / 2 / 16 / 3; }
+    .drama1 { grid-area: 18 / 2 / 22 / 3; }
+    .brass1 { grid-area: 32 / 2 / 37 / 3; }
+    
+    .brass2 {grid-area: 3 / 2 / 8 / 3;}
+    .eleventh-drama2 {grid-area: 12 / 2 / 17 / 3;}
+    .drama2 {grid-area: 22 / 2 / 27 / 3;}
+    .chorus2 {grid-area: 30 / 2 / 35 / 3;}
+    
+    .stage { grid-area: 1 / 3 / 2 / 4; }
+    
+    .patata1 { grid-area: 3 / 3 / 6 / 4; }
+    .togemanzai1 { grid-area: 8 / 3 / 9 / 4; }
+    .isee1 { grid-area: 12 / 3 / 14 / 4; }
+    .raccoon-friendship1 { grid-area: 15 / 3 / 17 / 4; }
+    .p-and-a1 { grid-area: 18 / 3 / 20 / 4; }
+    .asricotta1 { grid-area: 21 / 3 / 31 / 4; }
+    .bingo1 { grid-area: 33 / 3 / 38 / 4; }
 
-    .date {
-        grid-area: 1 / 1 / 5 / 2;
-        align-items: start;
-        border-radius: 5px;
-        background-color: rgb(90, 255, 40);
-    }
+    .asricotta2 {grid-area: 3 / 3 / 16 / 4;}
+    .togemanzai2 { grid-area: 17 / 3 / 18 / 4; }
+    .moritatatsuya2 {grid-area: 23 / 3 / 26 / 4; }
+    .unagipai2 { grid-area: 27 / 3 / 30 / 4; }
+    .fragment2 {grid-area: 31 / 3 / 34 / 4; }
+    .root-and-5th2 {grid-area: 35 / 3 / 38 / 4;}
     
+    
+    .musicroom { grid-area: 1 / 4 / 2 / 5; }
+    
+    .moritatatsuya1 { grid-area: 5 / 4 / 8 / 5; }
+    .uranus1 { grid-area: 9 / 4 / 12 / 5; }
+    .fragment1 { grid-area: 13 / 4 / 16 / 5; }
+    .root-and-5th1 { grid-area: 17 / 4 / 20 / 5; }
+    .unagipai-kari1 { grid-area: 21 / 4 / 24 / 5; }
 
-    
-    .nine { grid-area: 2 / 2 / 3 / 3; }
-    .ten { grid-area: 8 / 2 / 9 / 3; }
-    .eleven { grid-area: 14 / 2 / 15 / 3; }
-    .twelve { grid-area: 20 / 2 / 21 / 3; }
-    .thirteen { grid-area: 26 / 2 / 27 / 3; }
-    .fourteen { grid-area: 32 / 2 / 33 / 3; }
-    .fifteen { grid-area: 38 / 2 / 39 / 3; }
-    
-    
-    .arena { grid-area: 1 / 3 / 2 / 4; }
-    
-    .chorus1 { grid-area: 3 / 3 / 9 / 4; }
-    .eleventh-drama1 { grid-area: 11 / 3 / 16 / 4; }
-    .drama1 { grid-area: 18 / 3 / 22 / 4; }
-    .brass1 { grid-area: 32 / 3 / 37 / 4; }
-    
-    .brass2 {grid-area: 3 / 3 / 8 / 4;}
-    .eleventh-drama2 {grid-area: 12 / 3 / 17 / 4;}
-    .drama2 {grid-area: 22 / 3 / 27 / 4;}
-    .chorus2 {grid-area: 30 / 3 / 35 / 4;}
-    
-    .stage { grid-area: 1 / 4 / 2 / 5; }
-    
-    .patata1 { grid-area: 3 / 4 / 6 / 5; }
-    .togemanzai1 { grid-area: 8 / 4 / 9 / 5; }
-    .isee1 { grid-area: 12 / 4 / 14 / 5; }
-    .raccoon-friendship1 { grid-area: 15 / 4 / 17 / 5; }
-    .p-and-a1 { grid-area: 18 / 4 / 20 / 5; }
-    .asricotta1 { grid-area: 21 / 4 / 31 / 5; }
-    .bingo1 { grid-area: 33 / 4 / 38 / 5; }
-    .asricotta2 {grid-area: 3 / 4 / 16 / 5;}
-    .togemanzai2 { grid-area: 17 / 4 / 18 / 5; }
-    .moritatatsuya2 {grid-area: 23 / 4 / 26 / 5; }
-    .unagipai2 { grid-area: 27 / 4 / 30 / 5; }
-    .fragment2 {grid-area: 31 / 4 / 34 / 5; }
-    .root-and-5th2 {grid-area: 35 / 4 / 38 / 5;}
-    
-    
-    .musicroom { grid-area: 1 / 5 / 2 / 6; }
-    
-    .moritatatsuya1 { grid-area: 5 / 5 / 8 / 6; }
-    .uranus1 { grid-area: 9 / 5 / 12 / 6; }
-    .fragment1 { grid-area: 13 / 5 / 16 / 6; }
-    .root-and-5th1 { grid-area: 17 / 5 / 20 / 6; }
-    .unagipai-kari1 { grid-area: 21 / 5 / 24 / 6; }
-
-    .p-and-a2 {grid-area: 12 / 5 / 14 / 6;}
-    .uranus2 {grid-area: 15 / 5 / 18 / 6; }
-    .patata2 {grid-area: 22 / 5 / 25 / 6;}
+    .p-and-a2 {grid-area: 12 / 4 / 14 / 5;}
+    .uranus2 {grid-area: 15 / 4 / 18 / 5; }
+    .patata2 {grid-area: 22 / 4 / 25 / 5;}
 
     @media(max-width: 600px) {
         .tt {
-            grid-template-columns: 1fr;
+            grid-template-columns: 0.7fr repeat(3, 1fr);
         }
     }
 </style>

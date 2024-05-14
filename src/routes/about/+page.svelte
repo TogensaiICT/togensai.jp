@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>兎原祭について</title>
+</svelte:head>
+
 <main style="padding: 10%;">
     <div>
         <h2>兎原祭について</h2>

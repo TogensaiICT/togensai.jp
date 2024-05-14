@@ -2,6 +2,11 @@
     import Paper from "../Paper.svelte";
 
 </script>
+
+<svelte:head>
+    <title>アクセス</title>
+</svelte:head>
+
 <main>
     <Paper title="本校へのアクセス">
         <div>
