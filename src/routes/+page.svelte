@@ -41,6 +41,14 @@
 
 	<Countdown></Countdown>
 
+	<div class="notice">
+		<Card title="重要な注意点" nolink="true">
+			<ol>
+				<li>当日は学校までの臨時バスが運行されますが、そのバスは<strong>阪急御影南口は通りません。</strong></li>
+				<li>入校許可証を携行されていない<strong>一般の方の撮影は禁止</strong>します。また、個人情報を含む<strong>写真や動画をネット上にアップロード</strong>することはお控えください。</li>
+			</ol>
+		</Card>
+	</div>
 	<div class="concept-news">
 		<!---<div style="width: 50%;">-->
 			<Card title="コンセプト" nolink='true'>

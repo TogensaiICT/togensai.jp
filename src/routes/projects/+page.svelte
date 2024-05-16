@@ -1,5 +1,7 @@
 <script>
   import Paper from "../Paper.svelte";
+  import bijutu from "$lib/images/projects/美術部.jpg"
+  
 
 </script>
 <main>
@@ -12,7 +14,7 @@
             <h4>体力測定で身体をチェック！運動習慣や生活習慣を見直して、健康維持に役立てよう。</h4>
         </div>
         <div class="projects">
-            <img src="美術部.jpg" alt="美術部 作品展示＆缶バッジ制作">
+            <img src={bijutu} alt="美術部 作品展示＆缶バッジ制作">
             <h2>美術部 作品展示＆缶バッジ制作</h2>
             <h3>1-1</h3>
             <h4>美術部は今年も部員による作品展示と、缶バッジ制作体験を行います！あなたの描いた絵をすぐに缶バッジにできます。作品展示もぜひご覧下さい。</h4>

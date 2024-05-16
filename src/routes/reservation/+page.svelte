@@ -9,7 +9,7 @@
 <main>
     <Paper title="参加のためのガイド">
         <h2>予約の方法</h2>
-        <div style="font-weight: bold;">第11回兎原祭は事前予約制です。事前の予約をお願いいたします。</div>
+        <div style="font-weight: bold;">第12回兎原祭は事前予約制です。事前の予約をお願いいたします。</div>
         <ul>
             <li>予約は三菱総研DCS社のmiraicompassを利用して行われます。以下のリンクよりお進みください。</li>
 
