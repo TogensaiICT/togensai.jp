@@ -9,6 +9,8 @@
     <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
     <ul class="menu">
     	<li><a href="/timetable">タイムテーブル</a></li>
+		<li><a href="/projects">企画一覧</a></li>
+		<li><a href="/K1">K1グランプリ</a></li>
     </ul>
 </header>
 

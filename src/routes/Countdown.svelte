@@ -9,11 +9,11 @@
     }
 
     update();
-    $: days = String(Math.floor($difference / 1000 / 60 / 60 / 24)).padStart(2, '0');
-    $: hours = String(Math.floor($difference / 1000 / 60 / 60 % 24)).padStart(2, '0');
-    $: minutes = String(Math.floor($difference / 1000 / 60 % 60)).padStart(2, '0');
-    $: seconds = String(Math.floor($difference / 1000 % 60)).padStart(2, '0');
-    $: milliSeconds = String(Math.floor($difference)).slice(-3, -1);
+    $: days = parseInt(days) < 0 ? String(Math.floor($difference / 1000 / 60 / 60 / 24)).padStart(2, '0') : String(0);
+    $: hours = parseInt(hours) < 0 ? String(Math.floor($difference / 1000 / 60 / 60 % 24)).padStart(2, '0') : String(0);
+    $: minutes = parseInt(minutes) < 0 ? String(Math.floor($difference / 1000 / 60 % 60)).padStart(2, '0') : String(0);
+    $: seconds = parseInt(seconds) < 0 ? String(Math.floor($difference / 1000 % 60)).padStart(2, '0') : String(0);
+    $: milliSeconds = parseInt(milliSeconds) < 0 ? String(Math.floor($difference)).slice(-3, -1) : String(0);
 </script>
 
 <div class="countdown">
